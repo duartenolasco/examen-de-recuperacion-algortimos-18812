@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>salario </title>
+<link rel= "stylesheet" href="estilo.css";>
+</head>
+    <body>
+        
+        <h1> Distribuidora Hernandez</h1>
+        <p>Ingresar monto de descuento</p>
+        <input type="text"  id="sum1">
+        <p>ingresar cantidad de horas extras</p>
+        <input type="text"  id="sum2">
+        <input type="button"  value="calcular" onclick="( bon (1,2) );"> 
+        <p>La bonificacion de cada cargo es de 250</p>
+        <script>
+            var sum3;
+        sum3 = prompt ("ingresar  nombre de empleado")
+                var bon = function(sum1,sum2){      
+                sum2 = parseFloat(document.getElementById("sum2").value);
+                sum1 = parseFloat(document.getElementById("sum1").value);
+
+                var total1= (sum2 * 15.75);
+                alert("Nombre del empleado: "+ sum3);
+                alert ("Total por horas extras:"+ total1)
+                var total3 = (3250-sum1);
+                alert ("salario con el descuento:"+ total3);
+                var total2 =  (total1+250+ total3 );
+                if (total2 < 0){
+                    alert ("usted ingreso valores negativos");
+                 }
+                 alert ("salario total: "+ total2 );
+                 alert(alumno)
+                                    
+            }
+        </script>
+    </body>
+</html>
